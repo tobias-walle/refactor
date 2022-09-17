@@ -1,5 +1,5 @@
-start:
-  cargo run
+run *ARGS:
+  cargo run {{ARGS}}
 
 build:
   cargo build --release
