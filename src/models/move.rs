@@ -17,6 +17,12 @@ impl MoveValueParser {
     }
 }
 
+impl Default for MoveValueParser {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
 impl TypedValueParser for MoveValueParser {
     type Value = Move;
 

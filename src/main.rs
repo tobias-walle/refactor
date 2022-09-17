@@ -2,7 +2,9 @@ use clap::{Parser, Subcommand};
 use commands::r#move::*;
 use eyre::Result;
 
-mod commands;
+pub mod commands;
+pub mod models;
+pub mod utils;
 
 #[derive(Debug, Subcommand)]
 enum Command {
