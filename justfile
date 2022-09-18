@@ -1,5 +1,5 @@
 run *ARGS:
-  cargo run {{ARGS}}
+   RUST_BACKTRACE=1 cargo run {{ARGS}}
 
 fix:
   cargo clippy --fix --allow-staged
